@@ -1,0 +1,154 @@
+@media screen and (min-width: 500px) {
+    h1{
+        font-size: 30px;
+        padding: 40px 0px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    header img {
+        margin: 20px 10px;
+    }
+
+    .Foto{
+        width: 150px;
+        height: 150px;
+    }
+
+    .MenuLista{
+        font-size: 26px;
+    }
+    
+    .Menu ul li{
+        padding-top: 100px;
+    }
+    
+    .Experiencia span {
+        font-size: 14px;
+        padding: 25px 0 0 0;
+    }
+
+    .SetaMenu{
+        width: 50px;
+        height: 50px;
+    }
+
+    .Proj .ProjImg{
+        width: 440px;
+        height: 240px;
+    }
+
+    .Info .X{
+        width: 35px;
+        height: 35px;
+    }
+
+    .Icones{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+
+    header img {
+        margin: 30px 20px;
+    }
+
+    .SobreMim{
+        padding: 30px 40px;
+    }
+
+    .Foto{
+        width: 200px;
+        height: 200px;
+    }
+    
+    header #Menu .DentroMenu{
+        width: 30%; 
+    }
+
+    .Proj{
+        margin: 5px 20px;
+    }
+    
+    .Proj .ProjImg{
+        width: 290px;
+        height: 180px;
+    }
+    
+    .Info{
+        width: 70vw;
+    }
+
+    .Info .ImgInfo{
+        width: 70vw;
+    }
+
+    .Experiencia div{
+        padding: 0 60px;
+    }
+
+    .Experiencia span {
+        font-size: 16px;
+        padding: 45px 0 0 0;
+    }
+
+    .Icones{
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (min-width: 1080px) {
+    header img {
+        margin: 40px 30px;
+    }
+
+    .SobreMim{
+        padding: 40px 70px;
+    }
+
+    .Foto{
+        width: 300px;
+        height: 300px;
+    }
+
+    .Proj .ProjImg{
+        width: 460px;
+        height: 260px;
+    }
+
+    .Info .X{
+        width: 45px;
+        height: 45px;
+    }
+
+    .Experiencia div{
+        padding: 0 100px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .Proj{
+        margin: 15px 70px;
+    }
+    
+}

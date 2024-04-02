@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sono', monospace;
+}
+header img{
+    margin: 10px 5px ;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    padding: 5px;
+    border: 2px solid #8DA574;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header #AbreMenu{
+    background-color: #C4BD94;
+}
+
+header .SetaMenu{
+    box-shadow: 1px 1px 3px #000000;
+}
+
+header .SetaMenu:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+header #Menu{
+    visibility: hidden;
+}
+
+.Menu .ForaMenu{
+    left: 0px;
+    width: 100%;
+    background-color: rgba(64, 103, 60, 30%);
+    position: fixed;
+    height: 100vh;
+    z-index: 6;
+}
+
+.Menu .DentroMenu{
+    right: 0px;
+    background-color: rgba(64, 103, 60, 90%) ;
+    position: fixed;
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    box-shadow: -30px 1px 100px 10px #000000;
+    justify-content: center;
+    flex-direction: row-reverse;
+    z-index: 8; 
+    transition: right 1s;
+}
+
+.Menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.Menu ul li{
+    padding-top: 80px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.Menu ul li a:hover{
+    text-shadow: 1px 1px 2px #C4BC96;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+header #FechaMenu{
+    background-color: #40673C;
+}
+
+header .MenuLista{
+    list-style: none;
+    margin-top: 40px;
+}
+
+
+.MenuLista li a{
+    text-decoration: none;
+    color: #C4BC96;
+    -webkit-text-stroke-color: #40673C;
+}
+
+.SobreMim{
+    display: flex;
+    flex-direction: row;
+    max-height: 700px;
+    background-color: #C4BC96;
+    padding: 30px 20px;
+}
+
+.SobreMimTxt{
+    flex-direction: column;
+    padding: 0px 0px 5px 20px;
+}
+
+.SobreMimTxt h1{
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #40673C;
+    color: #8DA574;
+}
+
+.SobreMimTxt h2{
+    padding: 0px 20px;
+    font-weight: 700;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #40673C;
+    color: #8DA574;
+}
+
+.Foto{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #40673C ;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #8DA574;
+}
+
+.Projetos{
+    background: linear-gradient(180deg,#C4BC96 0%, #40673C 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    
+}
+
+h1{
+    font-size: 24px;
+    padding: 20px 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #40673C;
+    color: #C4BC96;
+}
+
+.ImagensProjetos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;  
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.Proj .ProjImg{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 160px;
+    margin: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 10px 7px -8px #000000;
+}
+
+h2{
+    font-size: 18px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #40673C;
+    color: #C4BC96;
+}
+
+li{
+    list-style: none;
+}
+
+.ImagensProjetos #P1{
+    background: url(../img/Desafio01.jpg) no-repeat bottom;
+    background-size: contain;
+}
+
+.ImagensProjetos #P2{
+    background: url(../img/JogoMemoria.png) no-repeat bottom;
+    background-size: contain;
+}
+
+.ImagensProjetos #P3{
+    background: url(../img/Piano.png) no-repeat bottom;
+    background-size: contain;
+}
+
+.ImagensProjetos #P4{
+    background: url(../img/DetonaRalph.png) no-repeat bottom;
+    background-size: contain;
+}
+
+.ImagensProjetos .ProjImg:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.Proj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Info{
+    background-color: #40632C;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: fit-content;
+    margin: 10px;
+    z-index: 2;
+    box-shadow: 3px 6px 100px #000000;
+}
+
+.Info .ImgsDiv{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.Info .ImgInfo{
+    width: 90vw;
+    z-index: 1;
+    box-shadow: 1px 4px 20px -5px #000000;
+}
+
+.Info h2{
+    margin: 10px;
+}
+
+.Info .Links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.Links li a{
+    display: flex;
+    width: max-content;
+    padding: 0 20px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.Info p{
+    -webkit-text-stroke-width: 0.5px;
+    color: #C4BC96;
+}
+
+.Info a{
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #C4BC96;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.Info a:link{
+    color: #C4BC96;
+}
+
+.Info a:hover{
+    color: #C4BC96;
+    text-shadow: 1px 1px 2px #C4BC96;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.Info a:visited{
+    color: #8DA574;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #8DA574;
+}
+
+#InfoP1{
+    display: none;
+    
+}
+
+#InfoP2{
+    display: none;
+}    
+
+#InfoP3{
+    display: none;
+}
+
+#InfoP4{
+    display: none;
+}
+
+.Info .X{
+    border-radius: 10%;
+    background-color: rgba(64, 99, 44, 80%);
+    position: absolute;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 1px 4px 5px #000000;
+}
+
+.Info .X:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background-color: rgba(64, 99, 44, 100%);
+}
+
+.Experiencia{
+    background: linear-gradient(180deg,#40673C 60%, #8DA574 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Experiencia div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.Experiencia h2{
+    padding-bottom: 0;
+}
+
+.Experiencia span{
+    position: initial;
+    color: #C4BC96;
+    font-size: 10px;
+    text-align: start;
+    font-weight: 500;
+    align-self: self-end;
+    padding: 15px 0px 0 0;
+
+}
+
+.Experiencia p{
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #40673C;
+    color: #C4BC96;
+    padding: 0px 0px 20px 0px;
+    text-align: justify;
+    font-weight: 700;
+}
+
+.Contato{
+    height: fit-content;
+    background-color: #8DA574;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Icones{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 30px 10px 30px;
+}
+
+.Icones li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.Icones li:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.Icones .Email{
+    width: 50px;
+    height: 50px;
+}
+
+.Icones .Insta{
+    width: 60px;
+    height: 60px;
+}
+
+.Icones .GitHub{
+    width: 60px;
+    height: 60px;
+}
+
+
