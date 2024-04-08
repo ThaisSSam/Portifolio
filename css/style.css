@@ -97,23 +97,26 @@ header .MenuLista{
 }
 
 .SobreMimTxt{
+    display: flex;
     flex-direction: column;
     padding: 0px 0px 5px 20px;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #40673C;
+    color: #8DA574;
+    text-align: left;
 }
 
 .SobreMimTxt h1{
     font-weight: 900;
-    -webkit-text-stroke-width: 0.7px;
-    -webkit-text-stroke-color: #40673C;
-    color: #8DA574;
 }
 
 .SobreMimTxt h2{
     padding: 0px 20px;
     font-weight: 700;
-    -webkit-text-stroke-width: 0.7px;
-    -webkit-text-stroke-color: #40673C;
-    color: #8DA574;
+}
+
+.SobreMimTxt p{
+    padding: 0px 30px;
 }
 
 .Foto{
@@ -130,15 +133,14 @@ header .MenuLista{
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #40673C;
+    color: #C4BC96;
 }
 
 h1{
     font-size: 24px;
     padding: 20px 0px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #40673C;
-    color: #C4BC96;
 }
 
 .ImagensProjetos{
@@ -159,14 +161,13 @@ h1{
     transition: all 0.5s;
     cursor: pointer;
     box-shadow: 0px 10px 7px -8px #000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #40673C;
+    color: #C4BC96;
 }
 
 h2{
     font-size: 18px;
-    text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #40673C;
-    color: #C4BC96;
 }
 
 li{
@@ -249,6 +250,7 @@ li{
 
 p{
     font-size: 16px;
+
 }
 
 .Info p{
@@ -318,7 +320,7 @@ p{
 }
 
 .Experiencia{
-    background: linear-gradient(180deg,#40673C 60%, #8DA574 100%);
+    background: linear-gradient(180deg,#40673C 50%, #608053 90%, #8DA574 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -327,11 +329,20 @@ p{
 .Experiencia div{
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
+    margin: 30px 30px 40px;
+}
+
+.Experiencia h1{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #40673C;
+    color: #C4BC96;
 }
 
 .Experiencia h2{
     padding-bottom: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #40673C;
+    color: #C4BC96;
 }
 
 .Experiencia span{
@@ -341,15 +352,12 @@ p{
     text-align: start;
     font-weight: 500;
     align-self: self-end;
-    padding: 15px 0px 0 0;
-
 }
 
 .Experiencia p{
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #40673C;
     color: #C4BC96;
-    padding: 0px 0px 20px 0px;
     text-align: justify;
     font-weight: 700;
 }
@@ -360,6 +368,9 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #40673C;
+    color: #C4BC96;
 }
 
 .Icones{
